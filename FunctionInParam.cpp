@@ -4,8 +4,11 @@
 
 using namespace std;
 
-bool isLessThan( const string & lhs, const string & rhs )
-{ return strcasecmp( lhs.c_str( ), rhs.c_str( ) ) < 0; }
+bool isLessThan( const string & lhs, const string & rhs ){ 
+	
+	return strcasecmp( lhs.c_str( ), rhs.c_str( ) ) < 0; 
+}
+
 
 template <typename Object>
 const Object & findMax( const vector<Object> & arr, bool (*compar)(const Object&, const Object&))
